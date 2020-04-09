@@ -19,7 +19,7 @@ body {
 }
 
 header {
-	background-image: url(../img//capa-madmax2.jpg);
+	background-image: url(./img/capa-madmax2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
