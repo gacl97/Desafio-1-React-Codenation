@@ -1,0 +1,336 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+	background-color: transparent;
+}
+
+body {
+	font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+	background-image: url(../img//capa-madmax2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+  position: relative;
+
+	height: 810px;
+	width: 100%;
+}
+
+header:after {
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.menu {
+	z-index: 2;
+	display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.header-content-item {
+  text-decoration: none;
+  margin: 0 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-content-item:hover {
+  color: #e4bb23;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-photo img {
+  border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	height: 55px;
+	margin-right: 15px;
+	width: 55px;
+}
+
+.user-name {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+/* segunda parte do cabeçalho principal */
+
+.header-middle .container {
+	position: relative;
+	z-index: 2;
+}
+
+.header-middle .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.tags {
+  margin-bottom: 15px;
+}
+
+.tags a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.tags a:hover {
+  color: #e4bb23;
+}
+
+.header-info p {
+
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.header-info p:last-child {
+  color: #e4bb23;
+}
+
+.header-button a {
+	cursor: pointer;
+	display: inline-block;
+	padding: 15px 50px;
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+  transition: all 0.2s ease-in-out;
+  margin: 25px 0;
+}
+
+.header-button a:hover {
+	opacity: 1;
+	visibility: visible;
+}
+
+.header-button i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+/* Cabeçalho do meio da página*/
+
+.movie-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  list-style: none;
+  padding: 0 20px;
+}
+
+.movie-content-item {
+  color:#e4bb23;
+  font-size: 15px;
+  padding: 25px 0;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.movie-content-item:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+/* Conteúdo do meio da página */
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.movies-list-item {
+  margin: 20px 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 24%;
+}
+
+.movie-header img {
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+.movie-name {
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.genres a {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #e4bb23;
+  text-decoration: none;
+}
+
+.genres a:hover {
+  box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.movie-footer {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movie-footer i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+.movie-footer i:hover {
+	color: #e74c3c;
+}
+
+.movie-info-hidden {
+  margin: 0;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 38.5%;
+	opacity: 0;
+	position: absolute;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 12.56%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.movie-info-hidden h3 {
+	color: #e4bb23;
+	font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.movie-info-hidden-icon {
+  margin-top: 30px;
+	color: #fff;
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;
+}
+
+.movies-list-item:hover .movie-info-hidden {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Rodapé da página */
+
+.footer {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-networks {
+  font-size: 25px;
+}
+
+.social-networks a {
+  color: #ccc;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.twitter-icon:hover {
+  color: #55acee;
+}
+
+.face-icon:hover {
+  color: #3b5998;
+}
+
+.insta-icon:hover {
+  color: #e95950;
+}
